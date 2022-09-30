@@ -1,4 +1,5 @@
 import "./App.css";
+import DubaiNft from "./img/dubai.png";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
             </ul>
           </nav>
           <nav className="center md: xl:contents">
-            <ul className="flex items-center mr-4 lg:mr-6 xl:mr-8">
+            <ul className=" items-center mr-4 lg:mr-6 xl:mr-8 hidden xl:flex">
               <li className="p-1">
                 <a
                   href=""
@@ -163,7 +164,7 @@ function App() {
         <div className="border w-full lg:w-1/2 m-auto mt-16 round-lg p-4 pt-12 text-center shadow-lg mint-form">
           <p>
             <span className="text-[#fcae04]">Contract Address </span>
-            <span>0xk334k21i34hDo3ML39828372137</span>
+            <span>0xcea78de09a9d0f565f6dc72e139f3c9b4f6773f8</span>
           </p>
           <p>
             <span className="text-[#fcae04]">Price Per Nft </span>
@@ -173,7 +174,7 @@ function App() {
             <span className="mr-8">3543</span>
 
             <span className="text-[#fcae04]">Max Supply </span>
-            <span>3543</span>
+            <span>10000</span>
           </p>
           <input
             className="input border w-52 lg:w-64 p-4 mr-4"
@@ -191,45 +192,338 @@ function App() {
           </a>
         </div>
       </section>
-      <section className="about">
+      <section className="about container m-auto" id="about">
         <h1 className="text-center text-4xl lg:text-6xl  mt-40 lg:mt-24  font-bold">
           <span className="text-[#fcae04]">About</span>
         </h1>
         <div className="mt-16 flex">
-          <div className="w-1/2">
-            <img src="./img/dubai.png" alt="" height={"300px"} />
+          <div className="w-full md:w-1/2">
+            <img src={DubaiNft} alt="" className="w-full md:w-2/4 m-auto" />
           </div>
-          <div className="w-1/2  m-auto">
-            <p className="font-bold text-2xl">
-              Dubai Apes Yacht Club Dubai Apes Yacht Club
+          <div className="w-full md:w-1/2  m-auto">
+            <p className=" text-lg md:text-xl">
+              -Dubai Apes Yacht Club Dubai Apes Yacht Club
             </p>
-            <p className="font-bold text-2xl">
-              Dubai Apes Yacht Club Dubai Apes Yacht Club
+            <p className=" text-lg md:text-xl">
+              -Dubai Apes Yacht Club Dubai Apes Yacht Club
             </p>
-            <p className="font-bold text-2xl">
-              Dubai Apes Yacht Club Dubai Apes Yacht Club
+            <p className=" text-lg md:text-xl">
+              -Dubai Apes Yacht Club Dubai Apes Yacht Club
             </p>
-            <p className="font-bold text-2xl">
-              Dubai Apes Yacht Club Dubai Apes Yacht Club
+            <p className=" text-lg md:text-xl">
+              -Dubai Apes Yacht Club Dubai Apes Yacht Club
             </p>
-            <p className="font-bold text-2xl">
-              Dubai Apes Yacht Club Dubai Apes Yacht Club
+            <p className=" text-lg md:text-xl">
+              -Dubai Apes Yacht Club Dubai Apes Yacht Club
+            </p>
+            <p className=" text-lg md:text-xl">
+              -Dubai Apes Yacht Club Dubai Apes Yacht Club
+            </p>
+            <p className=" text-lg md:text-xl">
+              -Dubai Apes Yacht Club Dubai Apes Yacht Club
             </p>
           </div>
         </div>
       </section>
-      <section className="roadmap">
+      <section className="roadmap container m-auto" id="roadmap">
         <h1 className="text-center text-4xl lg:text-6xl  mt-40 lg:mt-24  font-bold">
           <span className="text-[#fcae04]">Roadmap</span>
         </h1>
+
+        <ol className="relative border-l border-gray-200 dark:border-gray-700 justify-center w-full md:w-1/2 m-auto mt-24">
+          <li className="mb-10 ml-6">
+            <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                />
+              </svg>
+            </span>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              Flowbite Application UI v2.0.0{" "}
+            </h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              Released on January 13th, 2022
+            </time>
+            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              Get access to over 20+ pages including a dashboard layout, charts,
+              kanban board, calendar, and pre-order E-commerce &amp; Marketing
+              pages.
+            </p>
+          </li>
+          <li className="mb-10 ml-6">
+            <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                />
+              </svg>
+            </span>
+            <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              Flowbite Figma v1.3.0
+            </h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              Released on December 7th, 2021
+            </time>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+              All of the pages and components are first designed in Figma and we
+              keep a parity between the two versions even as we update the
+              project.
+            </p>
+          </li>
+          <li className="ml-6">
+            <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                />
+              </svg>
+            </span>
+            <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              Flowbite Library v1.2.2
+            </h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              Released on December 2nd, 2021
+            </time>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+              Get started with dozens of web components and interactive elements
+              built on top of Tailwind CSS.
+            </p>
+          </li>
+        </ol>
       </section>
-      <section className="team">
+      <section className="team" id="team">
         <h1 className="text-center text-4xl lg:text-6xl  mt-40 lg:mt-24  font-bold">
           <span className="text-[#fcae04]">Team</span>
         </h1>
+
+        <div className="flex items-center justify-center bg-white py-24">
+          <div className="flex flex-col">
+            <div className="flex flex-col ">
+              <div className="container max-w-7xl px-4">
+                <div className="flex flex-wrap">
+                  <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                    <div className="flex flex-col">
+                      <a href="#" className="mx-auto">
+                        <img
+                          className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                          src="https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80"
+                        />
+                      </a>
+
+                      <div className="text-center mt-6">
+                        <h1 className="text-gray-900 text-xl font-bold mb-1">
+                          Tranter Jaskulski
+                        </h1>
+
+                        <div className="text-gray-700 font-light mb-2">
+                          Founder & Specialist
+                        </div>
+
+                        <div
+                          className="flex items-center justify-center opacity-50 hover:opacity-100
+                                transition-opacity duration-300"
+                        >
+                          <a
+                            href="#"
+                            className="flex rounded-full hover:bg-indigo-50 h-10 w-10"
+                          >
+                            <i className="mdi mdi-linkedin text-indigo-500 mx-auto mt-2"></i>
+                          </a>
+
+                          <a
+                            href="#"
+                            className="flex rounded-full hover:bg-blue-50 h-10 w-10"
+                          >
+                            <i className="mdi mdi-twitter text-blue-300 mx-auto mt-2"></i>
+                          </a>
+
+                          <a
+                            href="#"
+                            className="flex rounded-full hover:bg-orange-50 h-10 w-10"
+                          >
+                            <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                    <div className="flex flex-col">
+                      <a href="#" className="mx-auto">
+                        <img
+                          className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                          src="https://images.unsplash.com/photo-1634896941598-b6b500a502a7?fit=clamp&w=400&h=400&q=80"
+                        />
+                      </a>
+
+                      <div className="text-center mt-6">
+                        <h1 className="text-gray-900 text-xl font-bold mb-1">
+                          Denice Jagna
+                        </h1>
+
+                        <div className="text-gray-700 font-light mb-2">
+                          Tired & M. Specialist
+                        </div>
+
+                        <div
+                          className="flex items-center justify-center opacity-50 hover:opacity-100
+                                transition-opacity duration-300"
+                        >
+                          <a
+                            href="#"
+                            className="flex rounded-full hover:bg-indigo-50 h-10 w-10"
+                          >
+                            <i className="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
+                          </a>
+
+                          <a
+                            href="#"
+                            className="flex rounded-full hover:bg-blue-50 h-10 w-10"
+                          >
+                            <i className="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
+                          </a>
+
+                          <a
+                            href="#"
+                            className="flex rounded-full hover:bg-orange-50 h-10 w-10"
+                          >
+                            <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                    <div className="flex flex-col">
+                      <a href="#" className="mx-auto">
+                        <img
+                          className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                          src="https://images.unsplash.com/photo-1634193295627-1cdddf751ebf?fit=clamp&w=400&h=400&q=80"
+                        />
+                      </a>
+
+                      <div className="text-center mt-6">
+                        <h1 className="text-gray-900 text-xl font-bold mb-1">
+                          Kenji Milton
+                        </h1>
+
+                        <div className="text-gray-700 font-light mb-2">
+                          Team Memeber
+                        </div>
+
+                        <div
+                          className="flex items-center justify-center opacity-50 hover:opacity-100
+                                transition-opacity duration-300"
+                        >
+                          <a
+                            href="#"
+                            className="flex rounded-full hover:bg-indigo-50 h-10 w-10"
+                          >
+                            <i className="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
+                          </a>
+
+                          <a
+                            href="#"
+                            className="flex rounded-full hover:bg-blue-50 h-10 w-10"
+                          >
+                            <i className="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
+                          </a>
+
+                          <a
+                            href="#"
+                            className="flex rounded-full hover:bg-orange-50 h-10 w-10"
+                          >
+                            <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                    <div className="flex flex-col">
+                      <a href="#" className="mx-auto">
+                        <img
+                          className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                          src="https://images.unsplash.com/photo-1635003913011-95971abba560?fit=clamp&w=400&h=400&q=80"
+                        />
+                      </a>
+
+                      <div className="text-center mt-6">
+                        <h1 className="text-gray-900 text-xl font-bold mb-1">
+                          Doesn't matter
+                        </h1>
+
+                        <div className="text-gray-700 font-light mb-2">
+                          Will be fired
+                        </div>
+
+                        <div
+                          className="flex items-center justify-center opacity-50 hover:opacity-100
+                                transition-opacity duration-300"
+                        >
+                          <a
+                            href="#"
+                            className="flex rounded-full hover:bg-indigo-50 h-10 w-10"
+                          >
+                            <i className="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
+                          </a>
+
+                          <a
+                            href="#"
+                            className="flex rounded-full hover:bg-blue-50 h-10 w-10"
+                          >
+                            <i className="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
+                          </a>
+
+                          <a
+                            href="#"
+                            className="flex rounded-full hover:bg-orange-50 h-10 w-10"
+                          >
+                            <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <footer
-        className="text-center text-white container m-auto"
+        className="text-center text-white container m-auto mt-8"
         style={{ backgroundColor: "#f1f1f1" }}
       >
         <div className="container pt-9">
@@ -343,9 +637,9 @@ function App() {
           className="text-center text-gray-700 p-4"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
-          © 2022 Copyright:
+          © 2022 Copyright :&nbsp;
           <a className="text-gray-800" href="https://tailwind-elements.com/">
-            Tailwind Elements
+            Dubai Apes Yacht Club
           </a>
         </div>
       </footer>
