@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-links li span {
+  position: relative;
+  z-index: 0;
+}
+
+.header-links li span::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 2px;
+  left: -4px;
+  right: -4px;
+  display: block;
+  height: 6px;
+}
+
+section.header .nft-name::before {
+  background-color: #fcae04;
+}
+
+.header-links li:not(.active):hover span::before {
+  background-color: #ccc;
+}
+.mint-form {
+  font-size:20px;
+}
+body {
+  cursor: url('./img/cursor.png'), auto;
+}
+.cursor-pointer {
+  cursor: url('./img/cursor.png'), auto !important;
+}
+section {
+  padding:20px;
+}
